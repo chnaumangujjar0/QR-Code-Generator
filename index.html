@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-GENERATOR APP</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: chocolate;
+    }
+    .main{
+       margin: 100px 100px;
+       width: 90%;
+       max-width: 600px;
+       background-color: aqua;
+       padding: 20px;
+       border-radius: 10px;
+    }
+    .inner-div{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+     .inner-div input{
+        padding: 8px;
+        font-size: larger;
+        border: none;
+        border-radius: 10px;
+
+     }
+      .inner-div button{
+        margin-top: 20px;
+        margin-left: 180px;
+       padding: 10px;
+       max-width: 200px;
+       background-color: burlywood;
+       border: none;
+       border-radius: 10px;        
+      }
+      img{
+        height: 300px;
+        width:300px;
+        margin: 20px;
+        margin-left: 130px;
+        border: none;
+        display: none;
+      }
+</style>
+<body>
+     <div class="main">
+        <h1>QR CODE GENERATOR</h1>
+        <div class="inner-div">
+           <input type="text" placeholder="Add Text">
+           <img  class="qr-code">
+           <button>Generate QR Code</button>
+        </div>
+     </div>
+     <script src="script.js"></script>
+</body>
+</html>
